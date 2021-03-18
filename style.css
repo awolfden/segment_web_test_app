@@ -1,0 +1,42 @@
+.body {
+    background-color: grey
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.flex-container-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-container {
+    width: 75%;
+
+}
+
+.margin-top {
+    margin-top: 25px;
+}
+
+.height-buffer {
+    height: 80px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 30%
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+input {
+    width: 100%;
+}
