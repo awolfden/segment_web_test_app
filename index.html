@@ -11,13 +11,8 @@
         console.log('middleware fired', payload);
     };
 
-    analytics.ready(()=> {
-        console.log('analytics ready');
-        analytics.addSourceMiddleware(mw);
-    });
+    analytics.addSourceMiddleware(mw);
 
-    
-    
     analytics.load("nzcjD9UHZgBXaj2neYsMl86YSR89RTiP");
     analytics.page();
     }}();
