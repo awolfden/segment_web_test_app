@@ -9,6 +9,7 @@
     
     const mw = function({payload, next, integrations, context}) {
         console.log('middleware fired', payload);
+        analytics.track('middleware track event');
     };
 
     analytics.addSourceMiddleware(mw);
