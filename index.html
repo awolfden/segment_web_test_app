@@ -10,15 +10,6 @@
     const mw = function({payload, next, integrations, context}) {
         console.log('middleware fired', payload);
         
-        if(!payload.obj.event) {
-            payload.obj.context.page = {};
-            payload.obj.page = {};
-            payload.obj.properties = {};
-        }
-
-        console.log(payload.obj.context.page, "modified payload props");
-        console.log(payload.obj.page, "modified payload props");
-        console.log(payload.obj.properties, "modified payload page object");
 
         next(payload);
     };
@@ -26,9 +17,10 @@
     analytics.addSourceMiddleware(mw);
 
     analytics.load("nzcjD9UHZgBXaj2neYsMl86YSR89RTiP");
-    analytics.page();
+    analytics.page("first page");
     }}();
     </script>
+
 
 </head> 
 <body class='body'> 
