@@ -9,7 +9,7 @@
     
     const mw = function({payload, next, integrations, context}) {
         console.log('middleware fired', payload);
-        
+        payload.obj.name = "first page modified by middleware"
 
         next(payload);
     };
